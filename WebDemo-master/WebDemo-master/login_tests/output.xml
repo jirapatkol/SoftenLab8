@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2025-01-28T23:18:14.684722" rpa="false" schemaversion="5">
+<suite id="s1" name="Valid Login" source="C:\Users\LENOVO\Downloads\WebDemo-master\Webdemo-master\login_tests\valid_login.robot">
+<test id="s1-t1" name="Valid Login" line="9">
+<kw name="Open Browser To Login Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T23:18:15.274004" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T23:18:15.273775" elapsed="4.717133"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-28T23:18:19.991511" elapsed="0.040766"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-28T23:18:20.032539" elapsed="0.000336"/>
+</kw>
+<kw name="Login Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-28T23:18:20.239279" level="INFO">Page title is 'Login Page'.</msg>
+<arg>Login Page</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-01-28T23:18:20.033471" elapsed="0.206078"/>
+</kw>
+<status status="PASS" start="2025-01-28T23:18:20.033097" elapsed="0.206751"/>
+</kw>
+<status status="PASS" start="2025-01-28T23:18:15.273152" elapsed="4.966989"/>
+</kw>
+<kw name="Input Username" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T23:18:20.243311" level="INFO">Typing text 'demo' into text field 'username_field'.</msg>
+<arg>username_field</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T23:18:20.242376" elapsed="0.759462"/>
+</kw>
+<arg>demo</arg>
+<status status="PASS" start="2025-01-28T23:18:20.241618" elapsed="0.760418"/>
+</kw>
+<kw name="Input Password" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T23:18:21.002970" level="INFO">Typing text 'mode' into text field 'password_field'.</msg>
+<arg>password_field</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T23:18:21.002783" elapsed="0.686443"/>
+</kw>
+<arg>mode</arg>
+<status status="PASS" start="2025-01-28T23:18:21.002497" elapsed="0.686851"/>
+</kw>
+<kw name="Submit Credentials" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-28T23:18:21.690160" level="INFO">Clicking button 'login_button'.</msg>
+<arg>login_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T23:18:21.690001" elapsed="1.055119"/>
+</kw>
+<status status="PASS" start="2025-01-28T23:18:21.689734" elapsed="1.055596"/>
+</kw>
+<kw name="Welcome Page Should Be Open" owner="resource">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-28T23:18:22.956932" level="INFO">Current location is 'http://localhost:7272/welcome.html'.</msg>
+<arg>${WELCOME URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-01-28T23:18:22.746434" elapsed="0.210619"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-28T23:18:23.164698" level="INFO">Page title is 'Welcome Page'.</msg>
+<arg>Welcome Page</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-01-28T23:18:22.957229" elapsed="0.207596"/>
+</kw>
+<status status="PASS" start="2025-01-28T23:18:22.746002" elapsed="0.418947"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-28T23:18:23.165453" elapsed="2.353248"/>
+</kw>
+<status status="PASS" start="2025-01-28T23:18:15.272329" elapsed="10.246738"/>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" start="2025-01-28T23:18:14.686087" elapsed="10.834847"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Valid Login">Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
